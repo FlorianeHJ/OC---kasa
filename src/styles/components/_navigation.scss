@@ -1,0 +1,17 @@
+.navigation {
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+
+    a li {
+      cursor: pointer;
+    }
+
+    .nav-active {
+      border-bottom: 1px solid $color-4;
+      padding-bottom: 5px;
+    }
+  }
+}
