@@ -1,0 +1,22 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: $color-1;
+    font-size: 180px;
+    padding: 20px;
+  }
+
+  p {
+    font-size: 20px;
+    color: $color-1;
+    font-weight: 500;
+  }
+}
+
+.linkError {
+  text-decoration: underline;
+  margin: 30px;
+}
