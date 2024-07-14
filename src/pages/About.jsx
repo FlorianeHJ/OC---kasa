@@ -1,13 +1,13 @@
 import React from "react";
 
+import Collapse from "../components/Collapse";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Collapse from "../components/Collapse";
 
 
 const About = () => {
 
-   const details1 = <p>Les annonces postées sur Kasa garantissetn une fiabilité totale. Les phootos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
+   const details1 = <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
 
    const details2 = <p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</p>
 
