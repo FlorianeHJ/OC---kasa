@@ -5,3 +5,22 @@
   border-radius: 25px;
   margin: 30px 0 30px 0;
 }
+
+.collapse {
+  margin-bottom: 20px;
+  background-color: $color-1;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+
+  .collapse-title {
+    color: $color-3;
+    padding: 10px;
+  }
+
+  .collapse-icon {
+    i {
+      color: $color-3;
+    }
+  }
+}
