@@ -12,10 +12,13 @@
   border-radius: 5px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  cursor: pointer;
 
   .collapse-title {
     color: $color-3;
-    padding: 10px;
   }
 
   .collapse-icon {

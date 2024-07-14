@@ -15,7 +15,7 @@ const toggleCollapse = () => {
             <span className='collapse-icon'>{isCollapse ? <i className="fa-solid fa-chevron-down"></i> : <i className="fa-solid fa-chevron-up"></i>}</span>
             </div>
             {!isCollapse && (
-            <div>{details}</div>
+            <div className='collapse-detail'>{details}</div>
         )}
         </div>
         
