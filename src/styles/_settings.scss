@@ -12,8 +12,15 @@ $color-4: #000000;
   color: $color-4;
 }
 
-body {
-  height: 100vh;
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  margin: 0 30px;
 }
 
 li {

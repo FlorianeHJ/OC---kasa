@@ -5,10 +5,12 @@ import Header from "../components/Header";
 
 const Home = () => {
   return (
-    <div>
+    <div className="container">
       <Header />
-      <h1>Accueil</h1>
 
+      <div className="content">
+      <div className="home-headers"></div>
+</div>
       <Footer />
     </div>
   );

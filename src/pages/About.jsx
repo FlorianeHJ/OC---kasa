@@ -16,8 +16,9 @@ const About = () => {
    const details4 = <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers domestique pour nos hôtes.</p>
 
   return (
-    <div>
+    <div className="container">
       <Header />
+      <div className="content">
       <div className="img-container">
       </div>
 <div>
@@ -27,7 +28,7 @@ const About = () => {
 <Collapse title="Securité" details={details4} />
 
 </div>
-     
+     </div>
       <Footer />
     </div>
   );
