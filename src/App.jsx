@@ -1,8 +1,10 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./pages/About";
+
+import Accomodation from "./pages/Accomodation";
 import Error from "./pages/Error";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
@@ -11,6 +13,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
+        <Route path="/logement/:id" element={<Accomodation />} />        
+
       </Routes>
     </BrowserRouter>
   );

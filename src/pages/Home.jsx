@@ -18,7 +18,7 @@ const Home = () => {
         <p>Chez vous, partout et ailleurs</p>
       </div>
       <div className="container-cards">
-        {data.map(card => (<Card key={card.id} title={card.title} cover={card.cover} />))}
+        {data.map(card => (<Card key={card.id} id={card.id} title={card.title} cover={card.cover} />))}
         
       </div>
 </div>
