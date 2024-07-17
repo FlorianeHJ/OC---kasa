@@ -2,6 +2,7 @@
   img {
     border-radius: 10px;
     max-height: 200px;
+    margin: 30px 0;
   }
 }
 
@@ -9,10 +10,37 @@
   .description-top {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
     .top-left {
-      h1 {
+      h2 {
         color: $color-1;
+        font-weight: 500;
+      }
+
+      h3 {
+        font-size: 14px;
+        font-weight: 500;
+        margin: 20px 0;
+      }
+    }
+
+    .top-right-host {
+      display: flex;
+      flex-direction: row;
+
+      align-items: center;
+      gap: 20px;
+
+      h4 {
+        color: $color-1;
+        font-weight: 500;
+        max-width: 50px;
+      }
+
+      img {
+        border-radius: 100px;
+        width: 40%;
       }
     }
   }

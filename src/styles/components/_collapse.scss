@@ -1,0 +1,29 @@
+.collapse {
+  margin-bottom: 20px;
+  background-color: $color-1;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  cursor: pointer;
+
+  .collapse-title {
+    color: $color-3;
+  }
+
+  .collapse-icon {
+    .chevron-up {
+      width: 75%;
+    }
+    .chevron-down {
+      width: 75%;
+    }
+  }
+}
+
+.collapse-detail {
+  margin-top: -20px;
+  padding: 10px 0;
+}

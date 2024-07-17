@@ -33,13 +33,13 @@ const Accomodation = () => {
                 <div className="description-container">
                     <div className="description-top">
                         <div className='top-left'>
-                        <h1>{apartment.title}</h1>
+                        <h2>{apartment.title}</h2>
                         <h3>{apartment.location}</h3></div>
-                        <div className='top-right'>
-                        <div className='host'>
+                       
+                        <div className='top-right-host'>
                             <h4>{apartment.host.name}</h4>
                             <img src={apartment.host.picture} alt="Propriétaire/hôte du logement" />
-                        </div></div>
+                        </div>
                     </div>
                     <div className="description-middle">
                         <div className='tags'>
