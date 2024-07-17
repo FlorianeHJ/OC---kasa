@@ -18,6 +18,7 @@ const Accomodation = () => {
                 stars.push(<span key={i} className='emptyStars'></span>)
             }
         }
+        return stars;
     }
 
 
@@ -31,22 +32,25 @@ const Accomodation = () => {
                 </div>
                 <div className="description-container">
                     <div className="description-top">
+                        <div className='top-left'>
                         <h1>{apartment.title}</h1>
-                        <h3>{apartment.location}</h3>
+                        <h3>{apartment.location}</h3></div>
+                        <div className='top-right'>
                         <div className='host'>
                             <h4>{apartment.host.name}</h4>
                             <img src={apartment.host.picture} alt="Propriétaire/hôte du logement" />
-                        </div>
+                        </div></div>
                     </div>
                     <div className="description-middle">
                         <div className='tags'>
                        <ul>{apartment.tags.map((tags, index) => (<li key={index}>{tags}</li>))}</ul></div>
 <div className='rattings'>
-    {generateStars(apartment.ratings)}
+    {generateStars(parseInt(apartment.ratings))}
 </div>
                     </div>
                     <div className="description-bottom">
                         <Collapse title="Descritpion" details={<p>{apartment.description}</p> }/>
+                        <Collapse title="Equipements" details=<ul>{apartment.equipments.map((equipments, index) => (<li key={index}>{equipments}</li>)) }</ul>/>
                     </div>
                 </div>
             </div>

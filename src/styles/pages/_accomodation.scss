@@ -1,0 +1,19 @@
+.galery {
+  img {
+    border-radius: 10px;
+    max-height: 200px;
+  }
+}
+
+.description-container {
+  .description-top {
+    display: flex;
+    flex-direction: row;
+
+    .top-left {
+      h1 {
+        color: $color-1;
+      }
+    }
+  }
+}
