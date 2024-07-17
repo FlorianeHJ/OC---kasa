@@ -1,5 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import emptyStars from "../assets/empty-star.png";
+import fullStars from "../assets/full-star.png";
 import Collapse from '../components/Collapse';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -13,9 +15,9 @@ const Accomodation = () => {
         const stars = []
         for (let i = 0; i < 5; i++ ) {
             if (i < rating) {
-                stars.push(<span key={i} className='fullStars'></span>)
+                stars.push(<span key={i}><img src={fullStars} alt="Etoile couleur saumon" /></span>)
             } else {
-                stars.push(<span key={i} className='emptyStars'></span>)
+                stars.push(<span key={i}><img src={emptyStars} alt="Etoile grisée" /></span>)
             }
         }
         return stars;
@@ -49,8 +51,8 @@ const Accomodation = () => {
 </div>
                     </div>
                     <div className="description-bottom">
-                        <Collapse title="Descritpion" details={<p>{apartment.description}</p> } className='collapse-accomodation'/>
-                        <Collapse title="Equipements" details={<ul>{apartment.equipments.map((equipments, index) => (<li key={index}>{equipments}</li>)) }</ul>} className='collapse-accomodation'/>
+                        <Collapse title="Descritpion" details={<p>{apartment.description}</p> } />
+                        <Collapse title="Equipements" details={<ul>{apartment.equipments.map((equipments, index) => (<li key={index}>{equipments}</li>)) }</ul>} />
                     </div>
                 </div>
             </div>

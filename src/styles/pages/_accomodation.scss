@@ -49,6 +49,11 @@
 
   .description-middle {
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+
     .tags {
       ul {
         display: flex;
@@ -71,9 +76,6 @@
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-
-    .collapse-accomodation {
-      min-width: 120px;
-    }
+    margin-bottom: 10px;
   }
 }
