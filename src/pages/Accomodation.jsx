@@ -44,13 +44,13 @@ const Accomodation = () => {
                     <div className="description-middle">
                         <div className='tags'>
                        <ul>{apartment.tags.map((tags, index) => (<li key={index}>{tags}</li>))}</ul></div>
-<div className='rattings'>
+                        <div className='rattings'>
     {generateStars(parseInt(apartment.ratings))}
 </div>
                     </div>
                     <div className="description-bottom">
-                        <Collapse title="Descritpion" details={<p>{apartment.description}</p> }/>
-                        <Collapse title="Equipements" details=<ul>{apartment.equipments.map((equipments, index) => (<li key={index}>{equipments}</li>)) }</ul>/>
+                        <Collapse title="Descritpion" details={<p>{apartment.description}</p> } className='collapse-accomodation'/>
+                        <Collapse title="Equipements" details={<ul>{apartment.equipments.map((equipments, index) => (<li key={index}>{equipments}</li>)) }</ul>} className='collapse-accomodation'/>
                     </div>
                 </div>
             </div>

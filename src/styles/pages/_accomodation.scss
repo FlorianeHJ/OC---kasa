@@ -1,7 +1,8 @@
 .galery {
   img {
     border-radius: 10px;
-    max-height: 200px;
+    max-height: 400px;
+    width: 70%;
     margin: 30px 0;
   }
 }
@@ -11,6 +12,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
 
     .top-left {
       h2 {
@@ -21,16 +23,16 @@
       h3 {
         font-size: 14px;
         font-weight: 500;
-        margin: 20px 0;
+        margin: 8px 0;
       }
     }
 
     .top-right-host {
       display: flex;
       flex-direction: row;
-
       align-items: center;
-      gap: 20px;
+      justify-content: center;
+      gap: 25px;
 
       h4 {
         color: $color-1;
@@ -40,8 +42,38 @@
 
       img {
         border-radius: 100px;
-        width: 40%;
+        width: 35%;
       }
+    }
+  }
+
+  .description-middle {
+    margin-bottom: 30px;
+    .tags {
+      ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        li {
+          color: $color-3;
+          background: $color-1;
+          padding: 5px 25px;
+          border-radius: 10px;
+          font-size: 10px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .description-bottom {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    .collapse-accomodation {
+      min-width: 120px;
     }
   }
 }

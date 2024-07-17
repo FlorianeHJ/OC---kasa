@@ -21,13 +21,14 @@ const About = () => {
       <div className="content">
       <div className="img-container">
       </div>
-<div>
+      <div className="about-collapse-container">
+<div className="about-collapse">
 <Collapse title="Fiabilité" details={details1} />
 <Collapse title="Respect" details={details2} />
 <Collapse title="Service" details={details3} />
 <Collapse title="Securité" details={details4} />
 
-</div>
+</div></div>
      </div>
       <Footer />
     </div>

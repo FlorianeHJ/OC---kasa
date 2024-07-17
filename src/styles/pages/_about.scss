@@ -3,5 +3,17 @@
   width: 100%;
   height: 195px;
   border-radius: 25px;
-  margin: 30px 0 30px 0;
+  margin: 30px 0 35px 0;
+  filter: brightness(0.6);
+}
+
+.about-collapse-container {
+  flex: 1 1 auto;
+  display: flex;
+  margin: 10px 0;
+  justify-content: center;
+  .about-collapse {
+    max-width: 950px;
+    width: 100%;
+  }
 }
