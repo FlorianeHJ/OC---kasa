@@ -14,7 +14,9 @@ const Accomodation = () => {
     const generateStars = (rating) => {
         const stars = []
         for (let i = 0; i < 5; i++ ) {
+            console.log(i, rating);
             if (i < rating) {
+                
                 stars.push(<span key={i}><img src={fullStars} alt="Etoile couleur saumon" /></span>)
             } else {
                 stars.push(<span key={i}><img src={emptyStars} alt="Etoile grisée" /></span>)
@@ -46,8 +48,8 @@ const Accomodation = () => {
                     <div className="description-middle">
                         <div className='tags'>
                        <ul>{apartment.tags.map((tags, index) => (<li key={index}>{tags}</li>))}</ul></div>
-                        <div className='rattings'>
-    {generateStars(parseInt(apartment.ratings))}
+                        <div className='rating'>
+    {generateStars(parseInt(apartment.rating))}
 </div>
                     </div>
                     <div className="description-bottom">

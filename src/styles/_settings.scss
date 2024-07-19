@@ -12,6 +12,11 @@ $color-4: #000000;
   color: $color-4;
 }
 
+body {
+  max-width: 1400px;
+  margin: auto;
+}
+
 .container {
   display: flex;
   flex-direction: column;
