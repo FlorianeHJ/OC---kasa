@@ -1,8 +1,7 @@
 import React from "react";
 
 import Collapse from "../components/Collapse";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+
 
 
 const About = () => {
@@ -16,9 +15,9 @@ const About = () => {
    const details4 = <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers domestique pour nos hôtes.</p>
 
   return (
-    <div className="container">
-      <Header />
-      <div className="content">
+    
+      
+      <>
       <div className="img-container">
       </div>
       <div className="about-collapse-container">
@@ -29,9 +28,9 @@ const About = () => {
 <Collapse title="Securité" details={details4} />
 
 </div></div>
-     </div>
-      <Footer />
-    </div>
+     </>
+      
+    
   );
 };
 

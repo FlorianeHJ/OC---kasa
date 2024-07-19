@@ -3,8 +3,7 @@ import { useParams } from 'react-router-dom';
 import emptyStars from "../assets/empty-star.png";
 import fullStars from "../assets/full-star.png";
 import Collapse from '../components/Collapse';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
+
 import data from "../data/appartements.json";
 
 const Accomodation = () => {
@@ -27,10 +26,10 @@ const Accomodation = () => {
 
 
     return (
-        <div className='container'>
-            <Header />
+       
+            
 
-            <div className="content">
+            <>
                 <div className='galery'>
                 <img src={apartment.cover} alt={apartment.title} />
                 </div>
@@ -57,11 +56,11 @@ const Accomodation = () => {
                         <Collapse title="Equipements" details={<ul>{apartment.equipments.map((equipments, index) => (<li key={index}>{equipments}</li>)) }</ul>} />
                     </div>
                 </div>
-            </div>
+            </>
 
-            <Footer />
+           
             
-        </div>
+        
     );
 };
 
