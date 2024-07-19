@@ -26,41 +26,43 @@ const Accomodation = () => {
 
 
     return (
-       
-            
 
             <>
-                <div className='galery'>
-                <img src={apartment.cover} alt={apartment.title} />
-                </div>
-                <div className="description-container">
-                    <div className="description-top">
-                        <div className='top-left'>
-                        <h2>{apartment.title}</h2>
-                        <h3>{apartment.location}</h3></div>
-                       
-                        <div className='top-right-host'>
+                <div className="accomodation-container">
+                    <div className='accomodation-container-top'>
+                        <div className='accomodation-left'>
+                            <div className='accomodation-names'>
+                                <h2>{apartment.title}</h2>
+                                <h3>{apartment.location}</h3>
+                            </div>
+                        <div className='tags'>
+                            <ul>{apartment.tags.map((tags, index) => (<li key={index}>{tags}</li>))}</ul>
+                    </div>
+
+                        </div>
+
+                        <div className='accomodation-right'>
+                        <div className='host'>
                             <h4>{apartment.host.name}</h4>
-                            <img src={apartment.host.picture} alt="Propriétaire/hôte du logement" />
+                            <img src={apartment.host.picture} alt="Propriétaire/hôte du logement" /></div>
+
+                            <div className='rating'>
+                                {generateStars(parseInt(apartment.rating))}
+                            </div>
                         </div>
                     </div>
-                    <div className="description-middle">
-                        <div className='tags'>
-                       <ul>{apartment.tags.map((tags, index) => (<li key={index}>{tags}</li>))}</ul></div>
-                        <div className='rating'>
-    {generateStars(parseInt(apartment.rating))}
-</div>
+
+                    <div className="accomodation-container-bottom">
+                        <div className="accomodation-collapse">
+                            <Collapse title="Descritpion" details={<p>{apartment.description}</p> } />
+                            <Collapse title="Equipements" details={<ul>{apartment.equipments.map((equipments, index) => (<li key={index}>{equipments}</li>)) }</ul>} />
+                        </div>
                     </div>
-                    <div className="description-bottom">
-                        <Collapse title="Descritpion" details={<p>{apartment.description}</p> } />
-                        <Collapse title="Equipements" details={<ul>{apartment.equipments.map((equipments, index) => (<li key={index}>{equipments}</li>)) }</ul>} />
-                    </div>
+
                 </div>
+
             </>
 
-           
-            
-        
     );
 };
 

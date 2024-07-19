@@ -7,32 +7,58 @@
   }
 }
 
-.description-container {
-  .description-top {
+.accomodation-container {
+  .accomodation-container-top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
 
-    .top-left {
-      h2 {
-        color: $color-1;
-        font-weight: 500;
+    margin-top: 20px;
+
+    .accomodation-left {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .accomodation-names {
+        h2 {
+          color: $color-1;
+          font-weight: 500;
+        }
+
+        h3 {
+          font-size: 14px;
+          font-weight: 500;
+          margin: 8px 0;
+        }
       }
 
-      h3 {
-        font-size: 14px;
-        font-weight: 500;
-        margin: 8px 0;
+      .tags {
+        ul {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          li {
+            color: $color-3;
+            background: $color-1;
+            padding: 5px 25px;
+            border-radius: 10px;
+            font-size: 10px;
+            font-weight: 600;
+          }
+        }
       }
     }
-
-    .top-right-host {
+  }
+  .accomodation-right {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    .host {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      gap: 25px;
+      gap: 15px;
 
       h4 {
         color: $color-1;
@@ -45,42 +71,21 @@
         width: 35%;
       }
     }
-  }
-
-  .description-middle {
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 20px;
-
-    .tags {
-      ul {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        li {
-          color: $color-3;
-          background: $color-1;
-          padding: 5px 25px;
-          border-radius: 10px;
-          font-size: 10px;
-          font-weight: 600;
-        }
-      }
-    }
-
     .rating {
       display: flex;
-      gap: 10px;
+      gap: 15px;
+
+      img {
+        width: 20px;
+      }
     }
   }
+}
 
-  .description-bottom {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
+.accomodation-collapse {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
 }
