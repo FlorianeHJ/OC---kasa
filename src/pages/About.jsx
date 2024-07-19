@@ -1,5 +1,6 @@
 import React from "react";
 
+import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
 
 
@@ -18,8 +19,8 @@ const About = () => {
     
       
       <>
-      <div className="img-container">
-      </div>
+      <Banner className="about-banner" />
+      
       <div className="about-collapse-container">
 <div className="about-collapse">
 <Collapse title="Fiabilité" details={details1} />
