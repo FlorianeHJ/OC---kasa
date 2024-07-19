@@ -9,6 +9,8 @@ const toggleCollapse = () => {
     setIsCollapse(!isCollapse)
 }
 
+
+
     return (
 
         <div >
@@ -17,9 +19,9 @@ const toggleCollapse = () => {
                 <span className='collapse-icon'>{isCollapse ? <img src={vector} alt="chevron up" className='chevron-up' /> : <img src={vector} alt="chevron down" className='chevron-down' /> }</span>
             </div>
 
-            {!isCollapse && (
-            <div className='collapse-detail'>{details}</div>
-        )}
+           
+            <div className={`collapse-detail ${!isCollapse ? 'open' : ''}`}>{details}</div>
+     
         </div>
         
     );
