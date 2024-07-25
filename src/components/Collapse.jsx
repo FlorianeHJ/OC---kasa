@@ -13,7 +13,7 @@ const toggleCollapse = () => {
 
     return (
 
-        <div >
+        <div className='collapse-container'>
             <div onClick={toggleCollapse} className='collapse'>
                 <h3 className='collapse-title'>{title}</h3>
                 <span className='collapse-icon'>{isCollapse ? <img src={vector} alt="chevron up" className='chevron-up' /> : <img src={vector} alt="chevron down" className='chevron-down' /> }</span>

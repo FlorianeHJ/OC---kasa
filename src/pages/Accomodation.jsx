@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import emptyStars from "../assets/empty-star.png";
 import fullStars from "../assets/full-star.png";
 import Collapse from '../components/Collapse';
@@ -22,6 +22,10 @@ const Accomodation = () => {
             }
         }
         return stars;
+    }
+
+    if (!apartment) {
+       return <Navigate to="*" />
     }
 
 
