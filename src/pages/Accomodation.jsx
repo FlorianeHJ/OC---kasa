@@ -5,6 +5,7 @@ import fullStars from "../assets/full-star.png";
 import Collapse from '../components/Collapse';
 
 import data from "../data/appartements.json";
+import Slideshow from '../components/Slideshow';
 
 const Accomodation = () => {
     const { id } = useParams();
@@ -32,6 +33,7 @@ const Accomodation = () => {
     return (
 
             <>
+            < Slideshow <img src={data.pictures} alt="slidshow de l'appartement" /> />
                 <div className="accomodation-container">
                     <div className='accomodation-container-top'>
                         <div className='accomodation-left'>
