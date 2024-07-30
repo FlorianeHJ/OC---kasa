@@ -1,0 +1,42 @@
+.slideshow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 1000px;
+  max-height: 400px;
+  overflow: hidden;
+  margin: 20px auto;
+  border-radius: 10px;
+
+  button {
+    background: none;
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .arrowLeft {
+    left: 10px;
+  }
+
+  .arrowRight {
+    right: 10px;
+  }
+
+  img {
+    width: 100%;
+
+    height: auto;
+    display: block;
+  }
+
+  .image-counter {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+}

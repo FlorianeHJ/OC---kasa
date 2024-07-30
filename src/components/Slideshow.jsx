@@ -21,9 +21,12 @@ const handleNext = () => {
     return (
         <>
             <div className="slideshow">
-                <button onClick={handlePrevious}>{arrowLeft}</button>
+                <button className='arrowLeft' onClick={handlePrevious}><img src={arrowLeft} alt="Flèche de gauche" /></button>
                 <img src={images[currentIndex]} alt="Slideshow" />
-                <button onClick={handleNext}>{arrowRight}</button>
+                <button className='arrowRight' onClick={handleNext}><img src={arrowRight} alt="Flèche de droite" /></button>
+                <p className="image-counter"> 
+                {currentIndex + 1} / {images.length}
+            </p>
             </div>
         </>
     );
