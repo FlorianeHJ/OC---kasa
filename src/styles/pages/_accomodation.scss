@@ -16,6 +16,10 @@
     margin-top: 20px;
     margin-bottom: 10px;
 
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
     .accomodation-left {
       display: flex;
       flex-direction: column;
@@ -25,6 +29,10 @@
           color: $color-1;
           font-weight: 500;
           font-size: 32px;
+
+          @media screen and (max-width: 767px) {
+            font-size: 25px;
+          }
         }
 
         h3 {
@@ -56,6 +64,12 @@
     gap: 12px;
     flex-direction: column;
 
+    @media screen and (max-width: 767px) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     .host {
       display: flex;
       flex-direction: row;
@@ -67,6 +81,10 @@
         color: $color-1;
         font-weight: 500;
         max-width: 50px;
+
+        @media screen and (max-width: 767px) {
+          font-size: 13px;
+        }
       }
 
       img {
@@ -92,4 +110,10 @@
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   margin: 20px 0;
+
+  @media screen and (max-width: 767px) {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
 }
