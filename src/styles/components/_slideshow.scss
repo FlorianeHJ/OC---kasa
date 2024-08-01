@@ -17,6 +17,7 @@
     z-index: 10;
     top: 50%;
     transform: translateY(-50%);
+    height: 400px;
   }
 
   .arrowLeft {
@@ -30,7 +31,6 @@
   img {
     width: 100%;
 
-    height: auto;
     display: block;
   }
 
