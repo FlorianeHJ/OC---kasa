@@ -7,6 +7,11 @@
   padding: 40px;
   border-radius: 10px;
 
+  @media screen and (max-width: 767px) {
+    background: none;
+    padding: 0;
+  }
+
   .card {
     display: flex;
     flex-direction: column;
