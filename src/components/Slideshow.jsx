@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import arrowLeft from "../assets/arrow-left.png";
 import arrowRight from "../assets/arrow-right.png";
 
-const Slideshow = ( {images}) => {
+const Slideshow = ( {images} ) => {
 
 const [currentIndex, setCurrentIndex ] = useState(0)
 
@@ -26,7 +26,7 @@ const handleNext = () => {
                 <button className='arrowRight' onClick={handleNext}><img src={arrowRight} alt="Flèche de droite" /></button>
                 <p className="image-counter"> 
                 {currentIndex + 1} / {images.length}
-            </p>
+                </p>
             </div>
         </>
     );

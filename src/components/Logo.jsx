@@ -7,7 +7,6 @@ const Logo = () => {
         <div > 
             <Link to="/"><img src={logo} alt="Logo Kasa" className="logo"/></Link>
         
-            
         </div>
     );
 };

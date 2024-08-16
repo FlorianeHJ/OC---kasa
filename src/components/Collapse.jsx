@@ -9,8 +9,6 @@ const toggleCollapse = () => {
     setIsCollapse(!isCollapse)
 }
 
-
-
     return (
 
         <div className='collapse-container'>
