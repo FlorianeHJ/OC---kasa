@@ -21,6 +21,8 @@ const toggleCollapse = () => {
 
            
             <div className={`collapse-detail ${!isCollapse ? 'open' : ''}`}>{details}</div>
+
+          
      
         </div>
         

@@ -30,6 +30,8 @@ const About = () => {
       <Collapse title="Service" details={details3} />
       <Collapse title="Securité" details={details4} />
 
+      
+
          </div>
          
    </div>

@@ -14,7 +14,7 @@ const Accomodation = () => {
     const generateStars = (rating) => {
         const stars = []
         for (let i = 0; i < 5; i++ ) {
-            console.log(i, rating);
+            
             if (i < rating) {
                 
                 stars.push(<span key={i}><img src={fullStars} alt="Etoile couleur saumon" /></span>)
